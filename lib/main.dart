@@ -15,12 +15,16 @@ Future<void> main() async{
 
   runApp(
     const ProviderScope(
-      c
-    )
-  )
+      child: TripsPlannerApp(),
+    ),
+  );
 }
-void main() {
-  runApp(const MyApp());
+
+Future<void> _configureAmplify() async {
+  await Amplify.addPlugins([
+    AmplifyAuthCognito(),
+  ]);
+  await Amplify.configure(amplifyconfig);
 }
 
 class MyApp extends StatelessWidget {
