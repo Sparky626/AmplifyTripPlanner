@@ -1,4 +1,4 @@
-# amplify_trips_planner
+# Amplify_Trip_Planner
 
 A new Flutter project.
 
